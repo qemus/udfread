@@ -10,8 +10,6 @@
 
 </div></h1>
 
-# UDFread 💿
-
 UDFread is a small command-line interface for the `libudfread` library.
 
 It can inspect and selectively read files from UDF images without mounting the
@@ -20,7 +18,7 @@ image or extracting a complete large file first.
 Release binaries statically link the corresponding upstream `libudfread`
 release, so users do not need to install a separate runtime library package.
 
-## Commands ⌨️
+## Commands 💿
 
 ```text
 udfread info IMAGE
