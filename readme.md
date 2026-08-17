@@ -10,7 +10,7 @@
 
 </div></h1>
 
-# UDFread
+# UDFread 💿
 
 UDFread is a small command-line interface for the `libudfread` library.
 
@@ -20,7 +20,7 @@ image or extracting a complete large file first.
 Release binaries statically link the corresponding upstream `libudfread`
 release, so users do not need to install a separate runtime library package.
 
-## Commands
+## Commands ⌨️
 
 ```text
 udfread info IMAGE
@@ -33,7 +33,7 @@ udfread map IMAGE PATH
 udfread blocks IMAGE PATH FILE_BLOCK [COUNT]
 ```
 
-## Examples
+## Examples 🧪
 
 Show information about a UDF image:
 
@@ -86,7 +86,7 @@ udfread map disc.iso /video/movie.m2ts
 udfread blocks disc.iso /video/movie.m2ts 0 16
 ```
 
-## Case-insensitive paths
+## Case-insensitive paths 🔤
 
 Use `-i` or `--ignore-case` with any command that accepts a UDF path to resolve
 each path component using ASCII case-insensitive matching:
@@ -103,7 +103,7 @@ ambiguous instead of selecting an entry arbitrarily.
 Output from commands such as `stat` and `ls` uses the actual path spelling
 stored in the image.
 
-## Install a release package
+## Install a release package 📦
 
 Download the package matching the host architecture from the latest GitHub
 release and install it with `apt`:
@@ -115,7 +115,7 @@ sudo apt install ./udfread_VERSION_amd64.deb
 The package has no runtime dependency on a separately installed `libudfread`
 package.
 
-## Build on Debian or Ubuntu
+## Build on Debian or Ubuntu 🛠️
 
 The build automatically retrieves the newest stable upstream `libudfread` tag,
 builds it as a static library, and links it into `udfread`:
