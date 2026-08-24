@@ -543,6 +543,9 @@ jobs:
           FROM artifact-${TARGETARCH}
           EOF_DOCKERFILE
       -
+        name: Checkout
+        uses: actions/checkout@v7
+      -
         name: Docker metadata
         id: meta
         uses: docker/metadata-action@v6
