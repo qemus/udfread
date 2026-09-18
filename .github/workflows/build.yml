@@ -12,7 +12,7 @@ concurrency:
 jobs:
   detect:
     name: Detect upstream release
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       contents: read
     outputs:
@@ -441,7 +441,7 @@ jobs:
       - detect
       - build
     if: needs.detect.outputs.exists == 'false'
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     permissions:
       actions: read
       contents: write
